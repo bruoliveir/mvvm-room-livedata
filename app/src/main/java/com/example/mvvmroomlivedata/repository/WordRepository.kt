@@ -1,6 +1,8 @@
-package com.example.mvvmroomlivedata
+package com.example.mvvmroomlivedata.repository
 
 import android.app.Application
+import com.example.mvvmroomlivedata.model.Word
+import com.example.mvvmroomlivedata.room.WordRoomDatabase
 import org.jetbrains.anko.doAsync
 
 class WordRepository(application: Application) {

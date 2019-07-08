@@ -1,9 +1,11 @@
-package com.example.mvvmroomlivedata
+package com.example.mvvmroomlivedata.view
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mvvmroomlivedata.R
+import com.example.mvvmroomlivedata.model.Word
 import kotlinx.android.synthetic.main.view_main_list_item.view.*
 
 class WordListAdapter : RecyclerView.Adapter<WordListAdapter.WordViewHolder>() {

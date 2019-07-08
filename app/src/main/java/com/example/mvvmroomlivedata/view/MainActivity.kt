@@ -1,4 +1,4 @@
-package com.example.mvvmroomlivedata
+package com.example.mvvmroomlivedata.view
 
 import android.app.Activity
 import android.content.Intent
@@ -8,7 +8,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.mvvmroomlivedata.NewWordActivity.Companion.EXTRA_WORD
+import com.example.mvvmroomlivedata.R
+import com.example.mvvmroomlivedata.model.Word
+import com.example.mvvmroomlivedata.view.NewWordActivity.Companion.EXTRA_WORD
+import com.example.mvvmroomlivedata.viewmodel.WordViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 

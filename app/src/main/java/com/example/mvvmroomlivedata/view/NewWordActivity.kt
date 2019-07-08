@@ -1,4 +1,4 @@
-package com.example.mvvmroomlivedata
+package com.example.mvvmroomlivedata.view
 
 import android.app.Activity
 import android.content.Intent
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import com.example.mvvmroomlivedata.R
 import kotlinx.android.synthetic.main.activity_new_word.*
 
 class NewWordActivity : AppCompatActivity() {
