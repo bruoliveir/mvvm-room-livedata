@@ -1,8 +1,7 @@
 package com.example.mvvmroomlivedata
 
+import android.content.Intent
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
@@ -16,22 +15,17 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         setupRecyclerView()
-
-        fab.setOnClickListener {}
+        setupFAB()
     }
 
     private fun setupRecyclerView() {
-        rvWordList.adapter = WordListAdapter().apply { setWords(listOf(Word("Example"))) }
+        rvWordList.adapter = WordListAdapter()
         rvWordList.layoutManager = LinearLayoutManager(this)
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.menu_main, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
-        R.id.action_settings -> true
-        else -> super.onOptionsItemSelected(item)
+    private fun setupFAB() {
+        fab.setOnClickListener {
+            startActivity(Intent(this, NewWordActivity::class.java))
+        }
     }
 }
