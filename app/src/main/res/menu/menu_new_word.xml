@@ -4,7 +4,7 @@
     tools:context="com.example.mvvmroomlivedata.NewWordActivity">
     <item
         android:id="@+id/action_add"
-        android:icon="@drawable/ic_add_white_24dp"
-        android:title="@string/action_add"
+        android:icon="@drawable/ic_check_white_24dp"
+        android:title="@string/new_word_action_save"
         app:showAsAction="always" />
 </menu>

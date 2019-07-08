@@ -6,9 +6,7 @@ import androidx.lifecycle.AndroidViewModel
 class WordViewModel(application: Application) : AndroidViewModel(application) {
     private val wordRepository by lazy { WordRepository(application) }
 
-    fun getAllWords() {
-        wordRepository.getAll()
-    }
+    fun getAllWords() = wordRepository.getAll()
 
     fun insert(word: Word) {
         wordRepository.insert(word)
